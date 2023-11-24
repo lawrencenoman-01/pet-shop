@@ -1,0 +1,64 @@
+@import '@styles/base';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+  @include directionY;
+  // align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  
+  .cart {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  &__content {
+    // background-color: red;
+    @include directionY;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+
+    .cartItem {
+      @include directionX;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      &__image {
+        width: 100px;
+      }
+    }
+
+    .quantityControl {
+      @include directionX;
+      align-items: center;
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        padding: 8px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .quantity {
+        margin: 0 10px;
+        font-size: 18px;
+      }
+    }
+
+    .totalPayment {
+      @include directionX;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const ADD_PRODUCT_REQUEST = 'AddProduct/ADD_PRODUCT_REQUEST';

@@ -1,0 +1,79 @@
+@import '@styles/base';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+  // background-color: red;
+  padding: 20px;
+  min-height: 100vh;
+
+  &__content {
+    // background-color: red;
+    @include directionY;
+    align-items: center;
+
+    // .name {
+    //   font-size: 30px;
+    // }
+
+    .form {
+      @include directionX;
+      justify-content: space-around;
+      margin-top: 30px;
+      max-width: 70%;
+      gap: 1rem;
+
+      .image {
+        width: 400px;
+        height: 400px;
+        object-fit: fill;
+      }
+
+      &__content {
+        @include directionY;
+        justify-content: center;
+        line-height: 10px;
+
+        .btn {
+          margin-top: 40px;
+          .btnPayment {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            width: 30%;
+            padding: 8px 12px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+        }
+
+        .quantityControl {
+          @include directionX;
+          align-items: center;
+
+          button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+
+          button:hover {
+            background-color: #45a049;
+          }
+
+          .quantity {
+            margin: 0 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    // justify-content: center;
+  }
+}
